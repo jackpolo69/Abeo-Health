@@ -1,0 +1,140 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90vh;
+    padding: 6rem 2rem 2rem;
+    /* Top padding for navbar */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95)), url('../assets/bg-hero.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--color-dark);
+}
+
+.hero-text .highlight {
+    color: var(--color-teal);
+    position: relative;
+    z-index: 1;
+}
+
+/* Add a decorative underline to 'You' */
+.hero-text .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: var(--color-orange);
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Create a nice abstract shape since we don't have the photo yet */
+.visual-circle {
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(135deg, var(--color-teal) 0%, #00e5c0 100%);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    opacity: 0.8;
+    animation: morph 8s ease-in-out infinite;
+    position: relative;
+}
+
+.visual-circle::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/random/800x800/?senior,care') no-repeat center/cover;
+    /* Fallback if net works, otherwise just gradient */
+    /* Since we can't guarantee net for unsplash in CSS, we use the gradient as primary. 
+       Actually, let's overlay a pseudo element with a secondary color to make it richer 
+    */
+    background: radial-gradient(circle at 30% 30%, var(--color-orange), transparent 50%);
+    mix-blend-mode: overlay;
+    border-radius: inherit;
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+
+    25% {
+        border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+    }
+
+    50% {
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+    }
+
+    75% {
+        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+    }
+
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+    .hero-content {
+        margin-bottom: 3rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .visual-circle {
+        width: 300px;
+        height: 300px;
+    }
+}

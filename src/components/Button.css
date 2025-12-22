@@ -1,0 +1,46 @@
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    /* Pill shape */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    font-family: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background-color: var(--color-teal);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #008f7a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 191, 165, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--color-teal);
+    color: var(--color-teal);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(0, 191, 165, 0.1);
+    transform: translateY(-2px);
+}
+
+.btn-orange {
+    background-color: var(--color-orange);
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: #e69129;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 171, 64, 0.3);
+}

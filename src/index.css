@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+:root {
+  font-family: 'Nunito', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Color Palette based on Logos */
+  --color-teal: #42C2BE;
+  /* Approximate from logo */
+  --color-orange: #FF8A34;
+  /* Approximate from logo leaf */
+  --color-dark: #1a1a1a;
+  --color-light: #ffffff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
