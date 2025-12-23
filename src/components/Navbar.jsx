@@ -32,6 +32,7 @@ const Navbar = () => {
                 if (id === 'services') multiplier = 0.05;
                 if (id === 'reviews') multiplier = 0.25;
                 if (id === 'contact-form') multiplier = 0.20;
+                if (id === 'careers') multiplier = 0.22;
 
                 const visualBuffer = window.innerHeight * multiplier;
                 offsetPosition = absoluteElementTop - visualBuffer;
@@ -58,6 +59,7 @@ const Navbar = () => {
                     <li><a href="#why-us" onClick={(e) => handleLinkClick(e, 'why-us', 'center')}>Why</a></li>
                     <li><a href="#services" onClick={(e) => handleLinkClick(e, 'services', 'center')}>Our Services</a></li>
                     <li><a href="#reviews" onClick={(e) => handleLinkClick(e, 'reviews', 'center')}>Reviews</a></li>
+                    <li><a href="#careers" onClick={(e) => handleLinkClick(e, 'careers', 'center')}>Careers</a></li>
                     <li><a href="#contact-form" className="btn-contact" onClick={(e) => handleLinkClick(e, 'contact-form', 'center')}>Contact Us</a></li>
                 </ul>
             </div>

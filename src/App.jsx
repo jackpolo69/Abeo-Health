@@ -8,6 +8,8 @@ import Testimonials from './components/Testimonials';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
+import CareersSection from './components/CareersSection';
+
 function App() {
     return (
         <div className="App">
@@ -18,6 +20,7 @@ function App() {
             <Services />
             <Testimonials />
             <ContactSection />
+            <CareersSection />
             <Footer />
         </div>
     );
