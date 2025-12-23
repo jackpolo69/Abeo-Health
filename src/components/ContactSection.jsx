@@ -13,11 +13,11 @@ const ContactSection = () => {
                     <div className="contact-methods">
                         <div className="contact-item">
                             <FaPhone size={24} />
-                            <span>(555) 123-4567</span>
+                            <span>(949) 987-4605</span>
                         </div>
                         <div className="contact-item">
                             <FaEnvelope size={24} />
-                            <span>info@abeohealth.com</span>
+                            <span>info@abeo.health</span>
                         </div>
                         <div className="contact-item">
                             <FaMapMarkerAlt size={24} />

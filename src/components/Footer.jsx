@@ -22,8 +22,8 @@ const Footer = () => {
                 </div>
                 <div className="footer-contact">
                     <h4>Contact Us</h4>
-                    <p>Email: info@abeohealth.com</p>
-                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@abeo.health</p>
+                    <p>Phone: (949) 987-4605</p>
                 </div>
             </div>
             <div className="footer-bottom">
