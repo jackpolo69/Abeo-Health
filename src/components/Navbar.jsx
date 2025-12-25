@@ -32,7 +32,7 @@ const Navbar = () => {
                 if (id === 'services') multiplier = 0.05;
                 if (id === 'reviews') multiplier = 0.25;
                 if (id === 'contact-form') multiplier = 0.20;
-                if (id === 'careers') multiplier = 0.22;
+                if (id === 'careers') multiplier = 0.12;
 
                 const visualBuffer = window.innerHeight * multiplier;
                 offsetPosition = absoluteElementTop - visualBuffer;
