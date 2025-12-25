@@ -50,11 +50,23 @@
 
 .video-player-container {
     width: 100%;
-    aspect-ratio: 16/9;
+    /* aspect-ratio: 16/9; Removed to allow dynamic sizing */
+    max-height: 70vh;
+    /* Prevent video from being too tall */
     background-color: #000;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.real-video-player {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    /* Ensure entire video is visible */
 }
 
 .video-placeholder {

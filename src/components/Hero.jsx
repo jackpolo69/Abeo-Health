@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import Button from './Button';
 import VideoModal from './VideoModal';
 import './Hero.css';
+import videoSenior from '../assets/video-senior.mov?url'; // Import the video asset
+import videoTransport from '../assets/video-transport.mov?url'; // Import the transport video asset
 
 const Hero = () => {
     const [modalConfig, setModalConfig] = useState({ isOpen: false, title: '', videoId: '', imageSrc: '' });
@@ -28,8 +30,8 @@ const Hero = () => {
                     <p className="hero-tagline">"The bridge between the hospital and the home."</p>
                     <p>Compassionate, professional health services for seniors and adults in the comfort of home.</p>
                     <div className="hero-buttons">
-                        <Button variant="primary" onClick={() => openVideo('Senior Care Overview', 'senior', 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=800&auto=format&fit=crop')}>Senior Care</Button>
-                        <Button variant="secondary" onClick={() => openVideo('Medical Transport Services', 'transport', 'https://images.unsplash.com/photo-1516574187841-693083f69382?q=80&w=800&auto=format&fit=crop')}>Medical Transport</Button>
+                        <Button variant="primary" onClick={() => openVideo('Senior Care Overview', 'senior', videoSenior)}>Senior Care</Button>
+                        <Button variant="secondary" onClick={() => openVideo('Medical Transport Services', 'transport', videoTransport)}>Medical Transport</Button>
                     </div>
                 </motion.div>
             </div>
