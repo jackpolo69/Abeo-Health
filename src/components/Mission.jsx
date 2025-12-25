@@ -1,6 +1,6 @@
 import React from 'react';
 import './Mission.css';
-import missionCompassion from '../assets/mission-compassion-diverse.png';
+import missionCompassion from '../assets/mission-compassion.png';
 
 const Mission = () => {
     return (
@@ -8,10 +8,10 @@ const Mission = () => {
             <div className="mission-container">
                 <div className="mission-content">
                     <h2>Our Mission</h2>
-                    <p className="mission-statement">"Abeo Health is a <strong>movement</strong>—redefining how care connects, and moves people forward."</p>
+                    <p className="mission-statement">"We connect care not as isolated services, but as a continuous, dignified journey."</p>
                     <div className="mission-details">
-                        <p>We are building the future where healthcare isn't a fragmented series of events, but a continuous, dignified journey. Our philosophy is <strong>"High Tech, High Touch"</strong>.</p>
-                        <p><strong>Abeó</strong> (pronounced <em>ah-beh-OH</em>) means both <strong>"Safe Passage"</strong> (Latin) and <strong>"Bringer of Happiness"</strong> (Yoruba). We are the capable guide in your healthcare journey.</p>
+                        <p>Abeó Health is a <strong>Care Coordination Network</strong> bridging the gap between hospital and home. We ensure no one feels lost by connecting you to the right caregivers and transport with <strong>clarity and compassion</strong>.</p>
+                        <p>Our philosophy is <strong>"High Tech, High Touch"</strong>. Technology enables efficiency—<strong>people deliver trust</strong>. We are here to move you forward—safely, respectfully, and together.</p>
                     </div>
                 </div>
                 <div className="mission-image-wrapper">

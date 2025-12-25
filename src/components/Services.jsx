@@ -62,7 +62,7 @@ const Services = () => {
                     <ServiceCard
                         title="Abeó Living"
                         icon={Home}
-                        description="Senior Placement. Expert guidance in finding the right assisted living or memory care community."
+                        description="Senior Placement. Expert guidance in finding the right assisted living or memory care."
                     />
                     <ServiceCard
                         title="Abeó Circle"

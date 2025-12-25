@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
                         <FaUserMd size={40} />
                     </div>
                     <h3>Culturally Competent Care</h3>
-                    <p>We pride ourselves on hiring diverse, qualified professionals who understand the unique cultural needs of our community. We speak your language—literally and figuratively.</p>
+                    <p>Our diverse team understands your unique cultural needs. We speak your language—literally and figuratively.</p>
                 </div>
 
                 <div className="why-card" data-aos="fade-up" data-aos-delay="200">
@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
                         <FaHeart size={40} />
                     </div>
                     <h3>Total Care Ecosystem</h3>
-                    <p>From <strong>Abeó Ride</strong> transportation to <strong>Abeó Living</strong> placement, we cover every step of your journey. No gaps, just continuous support.</p>
+                    <p>From transport to placement, we cover every step. No gaps, just continuous support.</p>
                 </div>
             </div>
         </section>

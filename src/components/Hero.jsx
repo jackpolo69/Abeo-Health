@@ -28,7 +28,7 @@ const Hero = () => {
                 >
                     <h1>Shaping a New Standard In Community Health</h1>
                     <p className="hero-tagline">"The bridge between the hospital and the home."</p>
-                    <p>Compassionate, professional health services for seniors and adults in the comfort of home.</p>
+                    <p>Professional health services for seniors and adults in the comfort of home.</p>
                     <div className="hero-buttons">
                         <Button variant="primary" onClick={() => openVideo('Senior Care Overview', 'senior', videoSenior)}>Senior Care</Button>
                         <Button variant="secondary" onClick={() => openVideo('Medical Transport Services', 'transport', videoTransport)}>Medical Transport</Button>
