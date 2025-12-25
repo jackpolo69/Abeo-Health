@@ -2,7 +2,7 @@ import React from 'react';
 import { FaTimes, FaPlay } from 'react-icons/fa';
 import './VideoModal.css';
 
-const VideoModal = ({ isOpen, onClose, title, videoId }) => {
+const VideoModal = ({ isOpen, onClose, title, videoId, imageSrc }) => {
     if (!isOpen) return null;
 
     // Simulate different video content based on ID
@@ -20,11 +20,12 @@ const VideoModal = ({ isOpen, onClose, title, videoId }) => {
 
                 <div className="video-player-container">
                     {/* Simulated Video Player UI */}
-                    <div className="video-placeholder">
+                    <div className="video-placeholder" style={imageSrc ? { backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}}>
                         <div className="play-button-overlay">
                             <FaPlay className="play-icon" />
                         </div>
-                        <p>Simulated Video Playback</p>
+                        {/* Only show text if no image, or make it subtle */}
+                        {!imageSrc && <p>Simulated Video Playback</p>}
                     </div>
                 </div>
             </div>

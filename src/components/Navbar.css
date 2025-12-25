@@ -130,3 +130,14 @@
         /* Mobile menu implementation usually needed here */
     }
 }
+
+@media (max-width: 768px) {
+    .navbar-logo .nav-logo-img {
+        height: 250px;
+        /* Increased by another half size (2.5x original) */
+    }
+
+    .navbar-container {
+        padding: 0.5rem 1rem;
+    }
+}

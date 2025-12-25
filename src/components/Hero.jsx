@@ -5,10 +5,10 @@ import VideoModal from './VideoModal';
 import './Hero.css';
 
 const Hero = () => {
-    const [modalConfig, setModalConfig] = useState({ isOpen: false, title: '', videoId: '' });
+    const [modalConfig, setModalConfig] = useState({ isOpen: false, title: '', videoId: '', imageSrc: '' });
 
-    const openVideo = (title, videoId) => {
-        setModalConfig({ isOpen: true, title, videoId });
+    const openVideo = (title, videoId, imageSrc) => {
+        setModalConfig({ isOpen: true, title, videoId, imageSrc });
     };
 
     const closeVideo = () => {
@@ -28,14 +28,16 @@ const Hero = () => {
                     <p className="hero-tagline">"The bridge between the hospital and the home."</p>
                     <p>Compassionate, professional health services for seniors and adults in the comfort of home.</p>
                     <div className="hero-buttons">
-                        <Button variant="primary" onClick={() => openVideo('Senior Care Overview', 'senior')}>Senior Care</Button>
-                        <Button variant="secondary" onClick={() => openVideo('Adult Care Services', 'adult')}>Adult Care</Button>
+                        <Button variant="primary" onClick={() => openVideo('Senior Care Overview', 'senior', 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=800&auto=format&fit=crop')}>Senior Care</Button>
+                        <Button variant="secondary" onClick={() => openVideo('Medical Transport Services', 'transport', 'https://images.unsplash.com/photo-1516574187841-693083f69382?q=80&w=800&auto=format&fit=crop')}>Medical Transport</Button>
                     </div>
                 </motion.div>
             </div>
             <div className="hero-visual">
-                {/* Placeholder for visual or generated image substitute */}
-                <div className="visual-circle"></div>
+                <div className="visual-wrapper">
+                    <div className="blob blob-orange"></div>
+                    <div className="blob blob-green"></div>
+                </div>
             </div>
 
             <VideoModal
@@ -43,6 +45,7 @@ const Hero = () => {
                 onClose={closeVideo}
                 title={modalConfig.title}
                 videoId={modalConfig.videoId}
+                imageSrc={modalConfig.imageSrc}
             />
         </section>
     );
