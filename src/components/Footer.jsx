@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-brand">
                     <img src={logoFull} alt="Abeo Health" className="footer-logo" height="250" />
-                    <p>Compassionate care directly to you.</p>
+                    <p>Because Health Is Everything.</p>
                 </div>
                 <div className="footer-links">
                     <h4>Company</h4>
