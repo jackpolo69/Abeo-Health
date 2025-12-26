@@ -4,7 +4,7 @@ import logoFull from '../assets/logo-full.png';
 
 const Footer = () => {
     return (
-        <footer className="footer-container" id="contact">
+        <footer className="footer" id="contact">
             <div className="footer-content">
                 <div className="footer-brand">
                     <img src={logoFull} alt="Abeo Health" className="footer-logo" height="250" />
