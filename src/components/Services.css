@@ -2,7 +2,7 @@
     padding: 6rem 2rem;
     background-color: var(--color-light);
     /* Slightly darker background (less white overlay) as requested */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('../assets/bg-services.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.80), rgba(255, 255, 255, 0.80)), url('../assets/bg-services.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

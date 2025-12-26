@@ -19,26 +19,28 @@ const Hero = () => {
 
     return (
         <section className="hero" id="home">
-            <div className="hero-content">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="hero-text"
-                >
-                    <h1>Shaping a New Standard In Community Health</h1>
-                    <p className="hero-tagline">"The bridge between the hospital and the home."</p>
-                    <p>Professional health services for seniors and adults in the comfort of home.</p>
-                    <div className="hero-buttons">
-                        <Button variant="primary" onClick={() => openVideo('Senior Care Overview', 'senior', videoSenior)}>Senior Care</Button>
-                        <Button variant="secondary" onClick={() => openVideo('Medical Transport Services', 'transport', videoTransport)}>Medical Transport</Button>
+            <div className="hero-container">
+                <div className="hero-content">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="hero-text"
+                    >
+                        <h1>Shaping a New Standard In Community Health</h1>
+                        <p className="hero-tagline">"The bridge between the hospital and the home."</p>
+                        <p>Professional health services for seniors and adults in the comfort of home.</p>
+                        <div className="hero-buttons">
+                            <Button variant="primary" onClick={() => openVideo('Senior Care Overview', 'senior', videoSenior)}>Senior Care</Button>
+                            <Button variant="secondary" onClick={() => openVideo('Medical Transport Services', 'transport', videoTransport)}>Medical Transport</Button>
+                        </div>
+                    </motion.div>
+                </div>
+                <div className="hero-visual">
+                    <div className="visual-wrapper">
+                        <div className="blob blob-orange"></div>
+                        <div className="blob blob-green"></div>
                     </div>
-                </motion.div>
-            </div>
-            <div className="hero-visual">
-                <div className="visual-wrapper">
-                    <div className="blob blob-orange"></div>
-                    <div className="blob blob-green"></div>
                 </div>
             </div>
 

@@ -1,19 +1,30 @@
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 90vh;
+    min-height: 100vh;
+    /* Full screen height */
     padding: 6rem 2rem 2rem;
     /* Top padding for navbar */
-    max-width: 1200px;
+    max-width: 100%;
+    /* Allow full width */
     margin: 0 auto;
-    gap: 2rem;
     overflow: hidden;
-    /* Slightly darker background (less white overlay) as requested */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.85)), url('../assets/bg-hero.png');
+    /* Lightened background (micro tweak lighter) */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.73), rgba(255, 255, 255, 0.83)), url('../assets/bg-hero.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: flex;
+    /* Kept for vertical centering of container */
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 .hero-content {
@@ -127,10 +138,13 @@
 
 @media (max-width: 768px) {
     .hero {
-        flex-direction: column;
-        text-align: center;
         padding-top: 20rem;
         /* Increased further for 250px logo */
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
     }
 
     .hero-content {
