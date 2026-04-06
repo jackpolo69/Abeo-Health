@@ -9,6 +9,7 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
 import CareersSection from './components/CareersSection';
+import MascotAgent from './components/MascotAgent';
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
             <ContactSection />
             <CareersSection />
             <Footer />
+            <MascotAgent />
         </div>
     );
 }
