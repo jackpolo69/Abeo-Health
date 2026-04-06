@@ -6,7 +6,7 @@ import './MascotAgent.css';
 const MascotAgent = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([
-        { type: 'ai', text: "Hello! I'm Abeo, your personal health ambassador. I'm here to guide you through our care coordination network. How can I help you move forward today?" }
+        { type: 'ai', text: "Hello! I'm O, your Abeo Orb and personal health ambassador. I'm here to guide you through our care coordination network. How can I help you move forward today?" }
     ]);
     const [inputText, setInputText] = useState('');
     const [isTyping, setIsTyping] = useState(false);
@@ -56,7 +56,7 @@ const MascotAgent = () => {
     };
 
     const handleSend = () => {
-        console.log("Abeo: Attempting to send message:", inputText);
+        console.log("O: Attempting to send message:", inputText);
         if (!inputText.trim()) return;
 
         const userMessage = { type: 'user', text: inputText };
@@ -94,7 +94,7 @@ const MascotAgent = () => {
                         transition={{ duration: 0.4, type: "spring", stiffness: 200, damping: 20 }}
                     >
                         <div className="chat-header">
-                            <h3>Abeo Ambassador</h3>
+                            <h3>O - Abeo Orb</h3>
                             <button className="close-btn" onClick={() => setIsOpen(false)}>&times;</button>
                         </div>
                         <div className="chat-messages">
@@ -104,7 +104,7 @@ const MascotAgent = () => {
                                 </div>
                             ))}
                             {isTyping && (
-                                <div className="typing-indicator">Abeo is thinking...</div>
+                                <div className="typing-indicator">O is thinking...</div>
                             )}
                             <div ref={messagesEndRef} />
                         </div>
@@ -151,7 +151,7 @@ const MascotAgent = () => {
             >
                 <img
                     src="/mascot_pro_final.png"
-                    alt="Abeo Mascot"
+                    alt="O - The Abeo Orb"
                     className="mascot-image"
                 />
 

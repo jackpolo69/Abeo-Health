@@ -30,13 +30,27 @@ const Home = ({ size, color }) => (
     </svg>
 );
 
-const ServiceCard = ({ title, icon: Icon, description }) => (
+const ServiceCard = ({ title, icon: Icon, description, benefits, link }) => (
     <div className="service-card" id={title.toLowerCase().split(' ')[0]}>
         <div className="icon-wrapper">
             <Icon size={40} color="var(--color-teal)" />
         </div>
-        <h3>{title}</h3>
-        <p className="service-description">{description}</p>
+        <div className="card-content">
+            <h3>{title}</h3>
+            <p className="service-description">{description}</p>
+            <ul className="service-benefits">
+                {benefits.map((benefit, index) => (
+                    <li key={index}>{benefit}</li>
+                ))}
+            </ul>
+        </div>
+        <a href={link} className="service-cta">
+            <span>Learn More</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        </a>
     </div>
 );
 
@@ -46,28 +60,52 @@ const Services = () => {
             <div className="services-container">
                 <div className="services-header">
                     <h2>Our Services</h2>
-                    <p>Comprehensive solutions for individuals, families, and facilities.</p>
+                    <p>Comprehensive solutions designed for individuals, families, and healthcare facilities.</p>
                 </div>
                 <div className="services-grid">
                     <ServiceCard
                         title="Abeó Registry"
                         icon={UserPlus}
-                        description="Private Duty & Facility Staffing. Connecting you with qualified nursing professionals (CNA, LVN, RN)."
+                        description="Connecting you with highly qualified nursing professionals."
+                        benefits={[
+                            "Private Duty Nursing in-home",
+                            "Facility Staffing Solutions",
+                            "Certified CNA, LVN, & RN placements"
+                        ]}
+                        link="#contact"
                     />
                     <ServiceCard
                         title="Abeó Ride"
                         icon={Truck}
-                        description="Safe, non-emergency medical transportation (Powered by Uber) for appointments and discharge."
+                        description="Safe, reliable non-emergency medical transportation."
+                        benefits={[
+                            "Powered by Uber Health technology",
+                            "Safe hospital discharges & appointments",
+                            "Door-to-door driver assistance"
+                        ]}
+                        link="#contact"
                     />
                     <ServiceCard
                         title="Abeó Living"
                         icon={Home}
-                        description="Senior Placement. Expert guidance in finding the right assisted living or memory care."
+                        description="Expert guidance in finding the right senior care."
+                        benefits={[
+                            "Assisted living & memory care matching",
+                            "Family-guided facility tours",
+                            "Navigating licensing and care fees"
+                        ]}
+                        link="#contact"
                     />
                     <ServiceCard
                         title="Abeó Circle"
                         icon={Heart}
-                        description="Care Coordination. A family dashboard and support system to guide your healthcare journey."
+                        description="A family dashboard and support system to guide your journey."
+                        benefits={[
+                            "Dedicated Care Coordination app",
+                            "Real-time family communication",
+                            "Comprehensive health support system"
+                        ]}
+                        link="#contact"
                     />
                 </div>
             </div>
