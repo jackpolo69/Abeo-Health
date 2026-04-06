@@ -1,6 +1,11 @@
 .mission {
     padding: 6rem 2rem;
     background-color: #f9fafb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .mission-container {

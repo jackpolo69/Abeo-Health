@@ -23,23 +23,9 @@ const Navbar = () => {
             const elementPosition = element.getBoundingClientRect().top;
             const absoluteElementTop = elementPosition + window.pageYOffset;
 
-            let offsetPosition;
-
-            if (blockPosition === 'center') {
-                // Unified visual buffer at 0.18 for key centered elements.
-                // UNLESS it is 'services' (higher, 0.05) or 'reviews' (lower, 0.25) or 'contact-form' (lower, 0.20).
-                let multiplier = 0.18;
-                if (id === 'services') multiplier = 0.05;
-                if (id === 'reviews') multiplier = 0.25;
-                if (id === 'contact-form') multiplier = 0.20;
-                if (id === 'careers') multiplier = 0.12;
-
-                const visualBuffer = window.innerHeight * multiplier;
-                offsetPosition = absoluteElementTop - visualBuffer;
-            } else {
-                // Standard offset for other links (just below navbar)
-                offsetPosition = absoluteElementTop - navbarHeight;
-            }
+            // Standard offset for all links (just below navbar). 
+            // Sections natively manage their own 100vh centering.
+            const offsetPosition = absoluteElementTop - navbarHeight;
 
             window.scrollTo({
                 top: offsetPosition,

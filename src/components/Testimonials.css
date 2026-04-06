@@ -2,6 +2,11 @@
     padding: 6rem 2rem;
     background-color: #f8f9fa;
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .testimonials-header {

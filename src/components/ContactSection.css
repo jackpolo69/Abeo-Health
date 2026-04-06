@@ -2,6 +2,11 @@
     padding: 6rem 2rem;
     background: linear-gradient(135deg, var(--color-teal) 0%, #2a9d8f 100%);
     color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .contact-container {
