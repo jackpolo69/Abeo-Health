@@ -45,7 +45,7 @@ const ServiceCard = ({ title, icon: Icon, description, benefits, link }) => (
             </ul>
         </div>
         <a href={link} className="service-cta">
-            <span>Learn More</span>
+            <span>Inquire Now</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -72,7 +72,7 @@ const Services = () => {
                             "Facility Staffing Solutions",
                             "Certified CNA, LVN, & RN placements"
                         ]}
-                        link="#contact"
+                        link="#contact-form"
                     />
                     <ServiceCard
                         title="Abeó Ride"
@@ -83,7 +83,7 @@ const Services = () => {
                             "Safe hospital discharges & appointments",
                             "Door-to-door driver assistance"
                         ]}
-                        link="#contact"
+                        link="#contact-form"
                     />
                     <ServiceCard
                         title="Abeó Living"
@@ -94,7 +94,7 @@ const Services = () => {
                             "Family-guided facility tours",
                             "Navigating licensing and care fees"
                         ]}
-                        link="#contact"
+                        link="#contact-form"
                     />
                     <ServiceCard
                         title="Abeó Circle"
@@ -105,7 +105,7 @@ const Services = () => {
                             "Real-time family communication",
                             "Comprehensive health support system"
                         ]}
-                        link="#contact"
+                        link="#contact-form"
                     />
                 </div>
             </div>
