@@ -1,0 +1,14 @@
+# robots.txt — Abeó Health (https://abeo.health)
+# Public marketing site is fully crawlable. The customer/provider portals are
+# app surfaces, not content — disallowed to keep them out of the index.
+
+User-agent: *
+Allow: /
+Disallow: /portal
+Disallow: /provider
+Disallow: /dispatch
+
+# AI answer-engines: a plain-English summary lives at /llms.txt
+# (see https://llmstxt.org). Crawling is permitted.
+
+Sitemap: https://abeo.health/sitemap.xml

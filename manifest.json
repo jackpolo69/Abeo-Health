@@ -1,0 +1,17 @@
+{
+  "name": "Abeó Health — A Health & Community Support Network",
+  "short_name": "Abeó",
+  "description": "South Orange County's community front door for care — free community resource navigation and senior placement guidance. A real person listens first, then points you to the right resource.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#42C2BE",
+  "icons": [
+    {
+      "src": "/logo-mark.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
